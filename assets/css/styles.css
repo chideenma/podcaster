@@ -61,23 +61,87 @@ body {
     font-family: 600;
     font-size: 42px;
 }
+.banner-intro > p {
+    padding-top: 30px;
+    line-height: 19.36px;
+
+}
+
+.banner-box {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+
+}
+.button-solid {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.button-outline {
+    border: 1px solid #000000;
+    background-color: transparent;
+    padding: 20px 40px;
+    color: #000000;
+    text-transform: uppercase;
+}
+.user-metrics {
+    display: flex;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+.user-text {
+    padding-top: 34px;
+    position: relative;
+    left: -20px;
+    color: #3B4347;
+    font-weight: 500;
+    line-height: 19.36px;
+
+}
+.user-text > span {
+    display: block;
+}
+
+.user-image {
+    padding-top: 27px;
+}
+
+.user-image > img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+    position: relative;
+}
+.user-image > img:nth-child(2) {
+    left: -20px;
+}
+.user-image > img:nth-child(3) {
+    left: -40px;
+}
 .banner-images {
     width: 100%;
     flex-basis: 1;
 }
 .bannerimage-wrapper1 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .bannerimage1 {
     position: relative;
 }
 .bannerimage2 {
     position: relative;
+    padding-top: 20px;
 }
 .bannerimage1 > img {
     height: 315px;
-    width: 297px;
+    width: 100%;
     object-fit: cover;
 }
 .bannerimage1-text {
@@ -91,11 +155,11 @@ body {
     padding: 0 20px;
     position: absolute;
     top: 220px;
-    left: -70%;
+    left: 0;
 }
 .bannerimage2 > img {
     height: 315px;
-    width: 297px;
+    width: 100%;
     object-fit: cover;
 
 }
@@ -107,7 +171,7 @@ body {
     font-size: 16px;
     line-height: 26px;
     position: absolute;
-    top: 40px;
+    bottom: 30px;
     right: 90px;
 
 
@@ -158,6 +222,48 @@ body {
         font-family: 600;
         line-height: 91.98px;
         font-size: 76px;
+    }
+    .banner-box {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+    .bannerimage-wrapper1 {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .bannerimage1-text {
+        display: flex;
+        background-color: white;
+        align-items: center;
+        gap: 20px;
+        box-shadow: 0px 1px 4px 0px #0000001A;
+        width: 251px;
+        height: 65px;
+        padding: 0 20px;
+        position: absolute;
+        top: 220px;
+        left: -70%;
+    }
+    .bannerimage1 > img {
+        height: 315px;
+        width: 297px;
+        object-fit: cover;
+    }
+    .bannerimage2 {
+        padding-top: 0;
+    }
+    .bannerimage2 > img {
+        height: 315px;
+        width: 297px;
+        object-fit: cover;
+    
+    }
+    .user-metrics {
+        display: flex;
+        padding-bottom: 0;
+        padding-top: 0;
     }
 
 }
